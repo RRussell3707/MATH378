@@ -1,0 +1,14 @@
+{
+  "hash": "4ada29117b417e5017a3825efcfe7d3a",
+  "result": {
+    "markdown": "---\ntitle: \"MATH378 Final Project\"\n---\n\n\nWelcome to C2C Renata Russell's Final Project Workspace! This is the beginning of a beautiful journey through the book \"DevOps for Data Science\" by Alex Gold.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\nAnd in case you didn't know:\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
