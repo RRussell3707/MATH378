@@ -29,8 +29,6 @@ jobs:
         with:
           r-version: '4.2.1'
           use-public-rspm: true
-      - run: install.packages("rmarkdown")
-      - run: install.packages("knitr")
 
       - name: Setup renv and install packages
         uses: r-lib/actions/setup-renv@v2
