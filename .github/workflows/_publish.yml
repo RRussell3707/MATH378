@@ -29,6 +29,7 @@ jobs:
         with:
           r-version: '4.2.0'
           use-public-rspm: true
+      - run: install.packages("rmarkdown")
 
       - name: Setup renv and install packages
         uses: r-lib/actions/setup-renv@v2
