@@ -9,5 +9,8 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 And in case you didn't know:
 
 ```{r}
+library(rmarkdown)
+library(knitr)
+
 1 + 1
 ```
