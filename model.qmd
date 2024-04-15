@@ -58,5 +58,10 @@ app = VetiverAPI(v, check_prototype=True)
 ```
 
 ```{python}
+from vetiver import prepare_docker
+prepare_docker(b, "penguin_model")
+```
+
+```{python}
 con.close()
 ```
