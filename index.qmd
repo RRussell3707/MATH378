@@ -2,13 +2,10 @@
 title: "MATH378 Final Project"
 ---
 
-Welcome to C2C Renata Russell's Final Project Workspace! This is the beginning of a beautiful journey through the book "DevOps for Data Science" by Alex Gold.
+::: {layout-ncol=2}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+!\[\](Penguin1.jpg)
 
-And in case you didn't know:
+!\[\](Penguin2.jpg)
 
-```{r}
-
-1 + 1
-```
+:::

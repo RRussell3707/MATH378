@@ -2,8 +2,18 @@
 title: "About"
 ---
 
-About this site
+Welcome to C2C Renata Russell's Final Project Workspace! This is the beginning of a beautiful journey through the book "DevOps for Data Science" by Alex Gold. More specifically, we covered Labs 1-6, which went over:
 
-```{r}
-1 + 1
-```
+-   T
+
+-   T
+
+-   T
+
+-   T
+
+-   T
+
+-   Creating
+
+So if you like data science (and penguins...)

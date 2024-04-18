@@ -5,7 +5,7 @@ format:
     code-fold: true
 ---
 
-```{r}
+```{r message=FALSE,warning=FALSE}
 library(palmerpenguins)
 library(dplyr)
 library(ggplot2)
