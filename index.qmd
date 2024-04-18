@@ -4,8 +4,8 @@ title: "MATH378 Final Project"
 
 ::: {layout-ncol=2}
 
-!\[\](Penguin1.jpg)
+!\[\](\~/Penguin1.jpg)
 
-!\[\](Penguin2.jpg)
+!\[\](\~/Penguin2.jpg)
 
 :::

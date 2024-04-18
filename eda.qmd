@@ -20,7 +20,7 @@ con <- DBI::dbConnect(
 df <- dplyr::tbl(con, "penguins")
 ```
 
-```{r}
+```{r message=FALSE,warning=FALSE}
 ## Penguin Size and Mass by Sex and Species
 
 df %>%
@@ -36,7 +36,7 @@ df %>%
 
 ```
 
-```{r}
+```{r message=FALSE,warning=FALSE}
 ## Penguin Size vs Mass by Species
 
 df %>%
@@ -45,6 +45,6 @@ df %>%
   geom_smooth(method = "lm")
 ```
 
-```{r}
+```{r message=FALSE,warning=FALSE}
 DBI::dbDisconnect(con, shutdown = TRUE)
 ```
