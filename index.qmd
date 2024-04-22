@@ -1,11 +1,11 @@
 ---
-title: "MATH378 Final Project"
+title: "Math 378 Final Project"
+editor: visual
 ---
 
-::: {layout-ncol=2}
-
-!\[\](\~/Penguin1.jpg)
-
-!\[\](\~/Penguin2.jpg)
-
-:::
++-----------------------+-------------------+
+| |                   | | ![](Penguin3.jpg) |
+| |-------------------| |                   |
+| | ![](Penguin1.jpg) | |                   |
+| | ![](Penguin2.jpg) | |                   |
++-----------------------+-------------------+
