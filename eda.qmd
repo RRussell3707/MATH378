@@ -5,6 +5,10 @@ format:
     code-fold: true
 ---
 
+In this section, we explore some cool functionalites in R!
+
+Here, we load the required libraries and connect to the DuckDB dataset to store it onto memory.
+
 ```{r message=FALSE,warning=FALSE}
 library(palmerpenguins)
 library(dplyr)
@@ -19,6 +23,8 @@ con <- DBI::dbConnect(
   )
 df <- dplyr::tbl(con, "penguins")
 ```
+
+Next, we clean the pulled data and organize it in a table. The snippet below gives us an idea of the parameters within each data frame.
 
 ```{r message=FALSE,warning=FALSE}
 ## Penguin Size and Mass by Sex and Species
@@ -36,6 +42,8 @@ df %>%
 
 ```
 
+To further visualize the data, the graph below plots body mass in grams vs bill length in millimeters, which each species separated by a different color.
+
 ```{r message=FALSE,warning=FALSE}
 ## Penguin Size vs Mass by Species
 
@@ -44,6 +52,8 @@ df %>%
   geom_point() + 
   geom_smooth(method = "lm")
 ```
+
+Lastly, we safely shut down the connection.
 
 ```{r message=FALSE,warning=FALSE}
 DBI::dbDisconnect(con, shutdown = TRUE)

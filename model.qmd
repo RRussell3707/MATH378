@@ -5,6 +5,10 @@ format:
     code-fold: true
 ---
 
+In this section, we explore some cool functionalites in Python!
+
+First, we import the necessary libraries.
+
 ```{python}
 from palmerpenguins import penguins
 from pandas import get_dummies
@@ -14,6 +18,8 @@ from sklearn import preprocessing
 import duckdb
 ```
 
+Next, we connect to the DuckDB dataset to store it onto memory. Viewing the first three rows indicates success!
+
 ```{python}
 # Get Data
 con = duckdb.connect('my-db.duckdb')
@@ -21,6 +27,8 @@ df = con.execute("SELECT * FROM penguins").fetchdf().dropna()
 
 df.head(3)
 ```
+
+Here, we create a linear regression model to predict body mass based on bill length, species, and sex.
 
 ```{python}
 # Define Model and Fit
@@ -31,6 +39,8 @@ y = df['body_mass_g']
 model = LinearRegression().fit(X, y)
 ```
 
+We considered various metrics to analyze the model.
+
 ```{python}
 # Get Some Information
 
@@ -39,6 +49,8 @@ print(f"Intercept {model.intercept_}")
 print(f"Columns {X.columns}")
 print(f"Coefficients {model.coef_}")
 ```
+
+Here, we created the vetiver model, pin, and API to facilitate our Shiny App connection.
 
 ```{python}
 from vetiver import VetiverModel
@@ -57,10 +69,14 @@ v = VetiverModel.from_pin(b, 'penguin_model')
 app = VetiverAPI(v, check_prototype=True)
 ```
 
+Here, we have the initial setup for the docker system. We only need to run this code once -- hence it is commented out.
+
 ```{python}
 # from vetiver import prepare_docker
 # prepare_docker(b, "penguin_model")
 ```
+
+Lastly, we safely shut down the connection.
 
 ```{python}
 con.close()
